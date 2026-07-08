@@ -4,6 +4,7 @@
 */
 
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const form = document.querySelector('form');
 const appendAlert = (message, type) => {
   const wrapper = document.createElement('div')
   wrapper.innerHTML = [
@@ -19,6 +20,7 @@ const appendAlert = (message, type) => {
 const alertTrigger = document.getElementById('liveAlertBtn')
 if (alertTrigger) {
   alertTrigger.addEventListener('click', () => {
-    appendAlert('Mensaje enviado', 'success')
+    appendAlert('Mensaje enviado', 'success');
+    form.reset();
   })
 }
