@@ -1,0 +1,41 @@
+:root {
+    --crema: #F7F1DE;
+    --verde-salvia: #B0BA99;
+    --cafe-medio: #9D6638;
+    --cafe-oscuro: #4E220F;
+    --terracota: #C9824A;
+}
+
+.about {
+    background-color: var(--crema);
+}
+
+.about__imagen {
+    max-width: 400px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(78, 34, 15, 0.2);
+}
+
+.about__contenido {
+    color: var(--cafe-oscuro);
+}
+
+.about__etiqueta {
+    display: inline-block;
+    background-color: var(--verde-salvia);
+    color: var(--cafe-oscuro);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.about__contenido h1 {
+    color: var(--cafe-oscuro);
+    font-weight: bold;
+}
+
+.about__contenido p {
+    line-height: 1.7;
+}
