@@ -7,8 +7,95 @@
   - Usen este archivo solo para ajustes propios del proyecto.
   - Mantengan una paleta de máximo 5 colores.
 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+:root {
+    /* Paleta Premium "Café" (5 colores) */
+    --bg-main: #F7F1DE;        /* Beige Claro */
+    --bg-surface: #fffaf0;     /* Crema */
+    --text-main: #2c1e16;      /* Espresso (Texto Oscuro) */
+    --accent-primary: #784d3c; /* Marrón Café */
+    --accent-glow: #c68e58;    /* Caramelo */
+
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+}
 html {
   height: 100%;
   width: 100%;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: var(--fuenteParrafos);
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: var(--fuenteHeading);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--accent-glow);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary);
+}
+.navbar-custom {
+    background-color: rgba(253, 251, 247, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(120, 77, 60, 0.2);
+    box-shadow: 0 4px 15px rgba(44, 30, 22, 0.05);
+}
+.navbar-brand {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--text-main) !important;
+    transition: transform 0.3s ease;
+}
+.navbar-brand span {
+    font-weight: 400;
+    color: var(--accent-primary);
+}
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+.navbar-toggler {
+    filter: invert(1); /* Hack para hacer el icono oscuro en un navbar-dark que ahora es claro */
+}
+.nav-link {
+    font-weight: 600;
+    color: rgba(44, 30, 22, 0.7) !important;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    font-size: 1.1rem;
+}
+.nav-link:hover, .nav-link.active {
+    color: var(--accent-primary) !important;
+    transform: translateY(-2px);
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-primary);
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
 }
