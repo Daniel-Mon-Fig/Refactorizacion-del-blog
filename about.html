@@ -4,21 +4,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-    <!-- Tarea 1: Instalar bootstrap con un enlace CDN (CSS) -->
+  <title>About</title>
+  <!-- Tarea 1: Instalar bootstrap con un enlace CDN (CSS) -->
   <!-- Esto enlaza la hoja de estilos de Bootstrap a nuestra página para usar sus clases -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+<!-- PERSONA 1: ABOUT PRINCIPAL -->
+<section class="about">
+  <div class="about__contenedor">
 
-  
+    <div class="about__imagen">
+      <img src="img/cafe.jpg" alt="Taza de café sobre una mesa" width="400" height="350">
+    </div>
 
+    <div class="about__contenido">
+      <span class="about__etiqueta">Nuestra historia</span>
 
+      <h1>Sobre Nosotros</h1>
 
+      <p>
+        Somos un blog dedicado a compartir información, consejos y experiencias
+        sobre el mundo del café.
+      </p>
 
-  <!-- Tarea 1: Instalar bootstrap con un enlace CDN (JS) -->
+      <p>
+        Nuestro objetivo es acercar el aprendizaje del café de una forma sencilla,
+        cálida y práctica para todas las personas.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- PERSONA 2: MISIÓN, VISIÓN Y VALORES -->
+<section class="valores mb-5 py-4">
+  <div class="row g-4">
+    
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm bg-light">
+        <div class="card-body text-center p-4">
+          <div class="text-warning mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cup-hot" viewBox="0 0 16 16">
+              <path d="M.5 11a.5.5 0 0 0 0 1h13.5a.5.5 0 0 0 0-1H.5zM11 2H3c-1.105 0-2 .895-2 2v5c0 1.105.895 2 2 2h8c1.105 0 2-.895 2-2V4c0-1.105-.895-2-2-2zm1 7c0 .552-.448 1-1 1H3c-.552 0-1-.448-1-1V4c0-.552.448-1 1-1h8c.552 0 1 .448 1 1v5z"/>
+              <path d="M13 5h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1V5zm1 4a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-1v3h1zM4.5 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5zm3 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5zm3 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5z"/>
+            </svg>
+          </div>
+          <h3 class="h4 card-title fw-bold text-dark mb-3">Misión</h3>
+          <p class="card-text text-secondary small" style="text-align: justify;">
+            Despertar los sentidos de nuestros clientes cada día, sirviendo café de especialidad de la más alta calidad en un ambiente cálido 
+            y acogedor. Nos dedicamos a crear momentos de felicidad y conexión a través de un servicio excepcional y productos artesanales horneados con amor.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm bg-light">
+        <div class="card-body text-center p-4">
+          <div class="text-warning mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+              <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.855a2.5 2.5 0 0 1-2.5 2.5h-.033a2.5 2.5 0 0 1-2.316-1.573 2.5 2.5 0 0 1-3.3 0 2.5 2.5 0 0 1-2.317 1.573H5.5A2.5 2.5 0 0 1 3 6.225v-.855a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.5 1.5 0 0 0 2.5 0 .5.5 0 0 1 .8 0 1.5 1.5 0 0 0 2.5 0 .5.5 0 0 1 .8 0 1.5 1.5 0 0 0 2.5 0 .5.5 0 0 1 .4.225V5.37a.5.5 0 0 0-.12-.325L12.23 2H3.77L1.12 5.045A.5.5 0 0 0 1 5.37v.855a1.5 1.5 0 0 0 1.5 1.5h.033a1.5 1.5 0 0 0 1.39-1.047.5.5 0 0 1 .933 0A1.5 1.5 0 0 0 6.25 7.75h.033a1.5 1.5 0 0 0 1.39-1.046.5.5 0 0 1 .934 0c.23.614.811 1.046 1.483 1.046h.033a1.5 1.5 0 0 0 1.39-1.046.5.5 0 0 1 .934 0A1.5 1.5 0 0 0 13.5 7.75h.033a1.5 1.5 0 0 0 1.39-1.046.5.5 0 0 1 .077-.229zM1.5 9.172V15h13V9.172a3.5 3.5 0 0 1-1 .122h-.033a3.5 3.5 0 0 1-3.245-2.296 3.5 3.5 0 0 1-3.244 2.296h-.033A3.5 3.5 0 0 1 3.75 7a3.5 3.5 0 0 1-3.245 2.296h-.033a3.5 3.5 0 0 1-1-.122zM2 14v-3.748a4.5 4.5 0 0 0 1 .123h.033a4.5 4.5 0 0 0 4.162-2.95 4.5 4.5 0 0 0 4.162 2.95h.033a4.5 4.5 0 0 0 1-.123V14H2z"/>
+            </svg>
+          </div>
+          <h3 class="h4 card-title fw-bold text-dark mb-3">Visión</h3>
+          <p class="card-text text-secondary small" style="text-align: justify;">
+            Ser la cafetería de especialidad referente en nuestra comunidad, reconocida por la excelencia de nuestro café de origen, 
+            la innovación en nuestras bebidas y por ser el tercer hogar preferido de las personas: un espacio ideal para trabajar, compartir o relajarse.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm bg-light">
+        <div class="card-body text-center p-4">
+          <div class="text-warning mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+            </svg>
+          </div>
+          <h3 class="h4 card-title fw-bold text-dark mb-3">Valores</h3>
+          <ul class="list-unstyled text-secondary small text-start mx-auto" style="max-width: 220px;">
+            <li class="mb-2"><span class="text-warning fw-bold"></span> Pasión: Amor por el arte del buen café, desde el grano hasta la taza.</li>
+            <li class="mb-2"><span class="text-warning fw-bold"></span> Sustentabilidad: Apoyo al comercio justo y a productores locales.</li>
+            <li class="mb-2"><span class="text-warning fw-bold"></span> Hospitalidad: Hacer que cada cliente se sienta como en casa.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Tarea 1: Instalar bootstrap con un enlace CDN (JS) -->
   <!-- Este script es necesario para que funcionen los componentes interactivos como el menú -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>

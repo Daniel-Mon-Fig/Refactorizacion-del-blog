@@ -2,82 +2,130 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-   <!-- Tarea 1: Instalar bootstrap con un enlace CDN (CSS) -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BlogDeCafé - Inicio</title>
+  <!-- Tarea 1: Instalar bootstrap con un enlace CDN (CSS) -->
   <!-- Esto enlaza la hoja de estilos de Bootstrap a nuestra página para usar sus clases -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-  <!-- Barra de navegacion -->
   <!-- Tarea 3: Refactorizar la NavBar usando la de Bootstrap -->
   <!-- Esto crea una barra de navegación responsiva que se colapsa en pantallas pequeñas -->
-  <nav class="navbar navbar-expand-lg navbar-light navbar-custom stick-top">
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top">
     <div class="container-fluid">
-      <a href="index.html" class="navbar-brand">Blog<span>DeCafé</span></a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-var ms-auto"></span>
+      <a class="navbar-brand" href="index.html">Blog<span>DeCafé</span></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse"id="navbarNav">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link active">Inicio</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link ">Nosotros</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link ">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
   <!-- Tareas 3 y 4: Refactorizar sistema de cuadrícula y diseño de la página Inicio -->
   <!-- La clase container-fluid hace que la cuadrícula ocupe todo el ancho de la pantalla -->
+  <div class="container-fluid flex-grow-1 mt-4 animate-fade-in">
+    <div class="row h-100">
+      <!-- Tarea 4: Dejar el lado izquierdo disponible para futuros anuncios -->
+      <div class="col-md-2 d-none d-md-flex flex-column justify-content-center align-items-center side-panel p-3 mb-4">
+        <h5 style="color: var(--accent-primary)">Espacio Publicitario</h5>
+        <p class="small text-center opacity-50">Tus anuncios aquí.</p>
+      </div>
 
-<div class="container-fluid flex-grow-1 mt-4 animate-fade-in">
-<div class="row"></div>h-100
+      <!-- Tarea 4: Agregar texto, imágenes, videos a la sección de contenido -->
+      <div class="col-md-8 px-md-4 mb-4">
+        <div class="glass-card p-5 mb-5 text-center">
+          <div class="container-fluid py-2">
+            <h1 class="display-4 fw-bold mb-3" style="color: var(--accent-primary)">Blog de café con consejos y cursos
+            </h1>
+            <p class="fs-5 opacity-75">
+              Aprende de los expertos con las mejores recetas y consejos. Descubre un mundo nuevo en cada taza.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="mb-4 text-center" style="color: var(--text-main);">Nuestro Blog</h3>
+
+        <div class="row align-items-md-stretch">
+          <div class="col-md-6 mb-4">
+            <div class="glass-card h-100 p-4 d-flex flex-column">
+              <div class="entrada__imagen">
+                <a href="entrada1.html">
+                  <img loading="lazy" src="img/blog1.webp" alt="Tipos de Granos de Cafe">
+                </a>
+              </div>
+              <h4 style="color: var(--accent-primary)">Tipo de Granos de Cafe</h4>
+              <p class="opacity-75 flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                temporibus esse incidunt rerum, eligendi quia voluptate sequi voluptas ad doloribus sunt.</p>
+              <button class="btn btn-custom mt-3" type="button">Leer Entrada</button>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="glass-card h-100 p-4 d-flex flex-column">
+              <div class="entrada__imagen">
+                <a href="entrada2.html">
+                  <img loading="lazy" src="img/blog2.webp" alt="3 Deliciosas Recetas">
+                </a>
+              </div>
+              <h4 style="color: var(--accent-primary)">3 Deliciosas Recetas de Café</h4>
+              <p class="opacity-75 flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                temporibus esse incidunt rerum, eligendi quia voluptate sequi voluptas ad doloribus sunt.</p>
+              <button class="btn btn-custom mt-3" type="button">Leer Entrada</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-md-stretch justify-content-center">
+          <div class="col-md-6 mb-4">
+            <div class="glass-card h-100 p-4 d-flex flex-column">
+              <div class="entrada__imagen">
+                <a href="entrada3.html">
+                  <img loading="lazy" src="img/blog3.webp" alt="Beneficios del Cafe">
+                </a>
+              </div>
+              <h4 style="color: var(--accent-primary)">Beneficios del Cafe</h4>
+              <p class="opacity-75 flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                temporibus esse incidunt rerum, eligendi quia voluptate sequi voluptas ad doloribus sunt.</p>
+              <button class="btn btn-custom mt-3" type="button">Leer Entrada</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tarea 4: Dejar el lado derecho disponible para futuros artículos de noticias -->
+      <div class="col-md-2 d-none d-md-flex flex-column justify-content-start align-items-start side-panel p-4 mb-4">
+        <h5 style="color: var(--accent-primary)" class="mb-4">Próximos Cursos</h5>
+        <ul class="list-unstyled w-100">
+          <li class="border-bottom border-secondary pb-3 mb-3"><a href="#" class="custom-link">Técnicas de
+              Extracción</a></li>
+          <li class="border-bottom border-secondary pb-3 mb-3"><a href="#" class="custom-link">Taller de Tostado</a>
+          </li>
+          <li><a href="#" class="custom-link">Arte Latte</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-    <!-- Tarea 1: Instalar bootstrap con un enlace CDN (JS) -->
+  <footer class="footer-custom py-4 mt-auto">
+    <div class="container text-center">
+      <p class="mb-1 opacity-75">BlogDeCafé - Creado por </p>
+      <p class="mb-0 small opacity-50">Contacto: <a href="mailto:contacto@blogdecafe.com"
+          class="custom-link">contacto@blogdecafe.com</a></p>
+    </div>
+  </footer>
+  <!-- Tarea 1: Instalar bootstrap con un enlace CDN (JS) -->
   <!-- Este script es necesario para que funcionen los componentes interactivos como el menú -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
